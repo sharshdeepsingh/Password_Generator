@@ -1,0 +1,52 @@
+{
+  "hash": "aed9e285",
+  "configHash": "fbcdc9ec",
+  "lockfileHash": "551d6bfb",
+  "browserHash": "da81f67f",
+  "optimized": {
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "84693663",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "3e69d707",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "75c56db1",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "224f4ad9",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "d3a0d39d",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "bd713bc4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-6LRINAN2": {
+      "file": "chunk-6LRINAN2.js"
+    },
+    "chunk-3ISELJEO": {
+      "file": "chunk-3ISELJEO.js"
+    }
+  }
+}

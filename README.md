@@ -16,7 +16,7 @@ Hey everyone! I built this Random Password Generator using React.js because, let
 ✅ Password Strength Indicator – See if your password is Weak, Strong, or Very Strong.
 ✅ Dark Mode Support – Because who doesn’t love dark mode? 😎
 ✅ Fully Responsive – Works smoothly on mobile, tablet, and desktop.
-
+  
 
 🎮 How It Works?
 1️⃣ Choose how long you want your password to be.

@@ -14,7 +14,7 @@ Hey everyone! I built this Random Password Generator using React.js because, let
 🔣 Special Characters (@, #, $, %, etc.)
 ✅ Copy to Clipboard – Just one click to copy.
 ✅ Password Strength Indicator – See if your password is Weak, Strong, or Very Strong.
-✅ Dark Mode Support – Because who doesn’t love dark mode? 😎
+✅ Dark Mode Support – Because who doesn’t love dark mode? 
 ✅ Fully Responsive – Works smoothly on mobile, tablet, and desktop.
   
 
@@ -28,17 +28,16 @@ Hey everyone! I built this Random Password Generator using React.js because, let
 
 💻 Tech Stack
 This project was a fun way to explore React and frontend development. Here’s what I used:
-🚀 React.js – To build the UI components
-📜 JavaScript (ES6+) – For the password logic
-🎨 CSS (Flexbox & Grid) – For making it look nice and responsive
-⚛️ React Hooks (useState) – To manage the app’s state
-🔄 Custom Hooks – To handle password generation logic
+1. React.js – To build the UI components
+2.JavaScript (ES6+) – For the password logic
+3. CSS (Flexbox & Grid) – For making it look nice and responsive
+4. React Hooks (useState) – To manage the app’s state
+5. Custom Hooks – To handle password generation logic
 
 🛠 How to Set It Up Locally?
 Wanna try running it on your own system? Super easy! Just follow these steps:
 
 1️⃣ Clone the repo
-
 
 2️⃣ Go inside the project folder:
 cd password-generator

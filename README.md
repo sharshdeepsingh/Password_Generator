@@ -37,8 +37,8 @@ This project was a fun way to explore React and frontend development. Here’s w
 🛠 How to Set It Up Locally?
 Wanna try running it on your own system? Super easy! Just follow these steps:
 
-1️⃣ Clone the repo:
-git clone https://github.com/your-username/password-generator.git
+1️⃣ Clone the repo
+
 
 2️⃣ Go inside the project folder:
 cd password-generator

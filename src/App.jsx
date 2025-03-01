@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import usePasswordGenerator from './hooks/usePasswordGenerator';
 import PasswordStrengthIndicator from './Components/StrengthChecker.jsx';
@@ -9,13 +9,21 @@ function App() {
   const [length, setLength] = useState(7);
   const [checkBoxData, setCheckBoxData] = useState([
     { title: "Include Alphabets", state: false },
-    { title: "Include Number", state: false },
-    { title: "Include Charaters", state: false }
+    { title: "Include Numbers", state: false },
+    { title: "Include Characters", state: false }
   ]);
-
   const [copied, setCopied] = useState(false);
-
   const { password, errorMessage, generatePassword } = usePasswordGenerator();
+
+  // Dark Mode State
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
+
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode);
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
 
   const handleCheckboxChange = (index) => {
     const updatedCheckboxData = [...checkBoxData];
@@ -24,15 +32,21 @@ function App() {
   };
 
   const handleCopy = () => {
-    if (!password) return; 
+    if (!password) return;
     navigator.clipboard.writeText(password);
     setCopied(true);
-    
-    setTimeout(() => setCopied(false), 2000);  
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
     <>
+      {/* Dark Mode Toggle Button */}
+      <div className="darkModeToggle">
+        <button onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+        </button>
+      </div>
+
       <div className="container">
         {/* Password Display & Copy Button */}
         {password && (
@@ -56,7 +70,7 @@ function App() {
         {/* Checkboxes for Password Options */}
         <div className='checkBox'>
           {checkBoxData.map((singleCheckBox, index) => (
-            <CheckBox title={singleCheckBox.title} key={index} onChange={() => handleCheckboxChange(index)} state={singleCheckBox.state}/>
+            <CheckBox title={singleCheckBox.title} key={index} onChange={() => handleCheckboxChange(index)} state={singleCheckBox.state} />
           ))}
         </div>
 

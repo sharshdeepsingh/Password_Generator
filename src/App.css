@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@
   color: #eee;
 }
 
+/* Light Mode (Default) */
 body {
   background: linear-gradient(135deg, #2a0845, #6441a5);
   display: flex;
@@ -16,6 +18,12 @@ body {
   transition: background 0.3s ease-in-out;
 }
 
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #000, #333);
+}
+
+/* Container */
 .container {
   background: rgba(50, 205, 205, 0.2);
   backdrop-filter: blur(25px);
@@ -28,10 +36,18 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+/* Dark Mode Container */
+body.dark-mode .container {
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect */
 .container:hover {
   transform: scale(1.03);
 }
 
+/* Password Display */
 .passwordDisplay {
   display: flex;
   justify-content: space-between;
@@ -45,6 +61,12 @@ body {
   word-break: break-word;
 }
 
+/* Dark Mode Password Display */
+body.dark-mode .passwordDisplay {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Copy Button */
 .copyBtn {
   background: #22d3ee;
   border: none;
@@ -56,11 +78,18 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+/* Dark Mode Copy Button */
+body.dark-mode .copyBtn {
+  background: #0ea5e9;
+}
+
+/* Hover Effect */
 .copyBtn:hover {
   background: #0ea5e9;
   transform: scale(1.1);
 }
 
+/* Character Length Section */
 .charLength {
   margin-top: 20px;
   text-align: center;
@@ -84,10 +113,16 @@ body {
   cursor: pointer;
 }
 
+/* Dark Mode Slider */
+body.dark-mode .charLength input {
+  background: #666;
+}
+
 .charLength input:hover {
   background: #ccc;
 }
 
+/* Checkboxes */
 .checkBox {
   display: flex;
   justify-content: center;
@@ -111,6 +146,12 @@ body {
   cursor: pointer;
 }
 
+/* Dark Mode Checkbox */
+body.dark-mode .checkBox input[type="checkbox"] {
+  accent-color: #0ea5e9;
+}
+
+/* Generate Button */
 .generateBtn {
   display: flex;
   justify-content: center;
@@ -128,11 +169,18 @@ body {
   width: 100%;
 }
 
+/* Dark Mode Generate Button */
+body.dark-mode .generateBtn button {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+/* Hover Effect */
 .generateBtn button:hover {
   background: linear-gradient(135deg, #0ea5e9, #0284c7);
   transform: scale(1.05);
 }
 
+/* Error Message */
 .errorMessage {
   color: #ff4d4d;
   font-weight: bold;
@@ -140,6 +188,31 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+/* Dark Mode Toggle Button */
+.darkModeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.darkModeToggle button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Dark Mode Toggle Hover */
+.darkModeToggle button:hover {
+  background: #666;
+}
+
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     padding: 20px;

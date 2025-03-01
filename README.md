@@ -2,7 +2,7 @@ Random Password Generator
 
 🚀 Live Demo: [Click Here](https://random-password-generator-idoj35e5m-sharshdeepsinghs-projects.vercel.app)
 
-Hey everyone! I built this Random Password Generator using React.js because, let’s be real—coming up with strong passwords is a pain. 😅 This tool helps you generate super-secure passwords instantly, with customizable options like length, alphabets, numbers, and special characters.
+Hey everyone! I built this Random Password Generator using React.js because, let’s be real—coming up with strong passwords is a pain. This tool helps you generate super-secure passwords instantly, with customizable options like length, alphabets, numbers, and special characters.
 
 🎯 Features
 ✅ Instant Password Generation – No more thinking of random characters yourself!

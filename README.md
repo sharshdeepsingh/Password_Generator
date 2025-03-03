@@ -1,6 +1,6 @@
 Random Password Generator
 
-🚀 Live Demo: [Click Here](https://passgenhss.netlify.app/)
+🚀 Live Demo: [Click Here](https://genpashss.netlify.app/)
 
 Hey everyone! I built this Random Password Generator using React.js because, let’s be real—coming up with strong passwords is a pain. This tool helps you generate super-secure passwords instantly, with customizable options like length, alphabets, numbers, and special characters.
 

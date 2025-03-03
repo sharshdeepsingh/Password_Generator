@@ -8,7 +8,7 @@ const usePasswordGenerator = () => {
     let charset = "";
     let generatedPassword = "";
 
-    // Filter selected options
+  
     const selectedOptions = checkBoxData.filter((checkbox) => checkbox.state);
 
     if (selectedOptions.length === 0) {
@@ -34,7 +34,6 @@ const usePasswordGenerator = () => {
       }
     });
 
-    // Generate Password
     for (let i = 0; i < length; i++) {
       const randomIndex = Math.floor(Math.random() * charset.length);
       generatedPassword += charset[randomIndex];
